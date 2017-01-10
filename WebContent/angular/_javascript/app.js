@@ -7,10 +7,7 @@ crmTool.config([
 		
 		$routeProvider.when('/logon'), {
 			templateURL : 'logon/logon.html',
-			controller  : 'FirstPageController'
-		}).when('/secondPage'), {
-			templateURL : 'secondPage/secondPage.html',
-			controller  : 'SecondPageController'
+			controller  : 'logOnCtrl'
 		}).otherwise({
 			redirectTo	: '/logon'
 		}
