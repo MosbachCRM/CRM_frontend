@@ -5,14 +5,14 @@ var crmTool = angular.module('crmTool', [
 crmTool.config([
 	'$routeProvider', function($routeProvider) {
 		
-		$routeProvider.when('/firstPage'), {
-			templateURL : 'firstPage/firstPage',
+		$routeProvider.when('/logon'), {
+			templateURL : 'logon/logon.html',
 			controller  : 'FirstPageController'
 		}).when('/secondPage'), {
-			templateURL : 'secondPage/secondPage',
+			templateURL : 'secondPage/secondPage.html',
 			controller  : 'SecondPageController'
 		}).otherwise({
-			redirectTo	: '/firstPage'
+			redirectTo	: '/logon'
 		}
 		
 	});
