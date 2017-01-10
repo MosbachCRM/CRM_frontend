@@ -5,7 +5,7 @@ var crmTool = angular.module('crmTool', [
 crmTool.config([
 	'$routeProvider', function($routeProvider) {
 		
-		$routeProvider.when('/logon'), {
+		$routeProvider.when('/'), {
 			templateURL : 'logon/logon.html',
 			controller  : 'logOnCtrl'
 		}).otherwise({
